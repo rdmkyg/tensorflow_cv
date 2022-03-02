@@ -15,8 +15,12 @@
 - 우분투 20.04에서 opencv 사용법은 https://linuxize.com/post/how-to-install-opencv-on-ubuntu-20-04/ 참고하였습니다.
 
 ## Docker 이미지 만드는 과정
-- 첨부와 같이 Dockerfile을 만들고 아래와 같이 빌드 한다. 
-- docker build --tag rdmkyg/tensorflow:2.4.3-jupyter-cv .
-- 
+- 첨부와 같이 Dockerfile을 만들고 아래와 같이 빌드 한다.  <br>
+      docker build --tag rdmkyg/tensorflow:2.4.3-jupyter-cv .
+-   도커에 연결 한다. 
+    docker run -it --rm -v $(realpath ~/notebooks):/tf/notebooks -p 8888:8888 rdmkyg/tensorflow:2.4.3-jupyter-cv
 
 
+## 주피터 노트북 진입하면  주로  사용하는 모듈을 설치 한다. 
+- !pip install pandas
+- !pip install -U scikit-learn
