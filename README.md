@@ -13,7 +13,7 @@
    
 ## Docker 컨테이너 Base 이미지 
 - <a href = "https://hub.docker.com/r/tensorflow/tensorflow/"> tensorflow/tensorflow:2.4.3-jupyter </a> 이미지를 사용하였습니다. 
-- 우분투 20.04에서 opencv 사용법은 https://linuxize.com/post/how-to-install-opencv-on-ubuntu-20-04/ 참고하였습니다.
+- 우분투 20.04에서 opencv 사용법은 https://linuxize.com/post/how-to-install-opencv-on-ubuntu-20-04/ 참고하였습니다. <br><br>
 
 ## Docker 이미지 만드는 과정
 - 첨부와 같이 Dockerfile을 만들고 아래와 같이 빌드 합니다.   <br>
