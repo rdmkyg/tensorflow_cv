@@ -19,6 +19,10 @@
       docker build --tag rdmkyg/tensorflow:2.4.3-jupyter-cv .
 -   도커에 연결 한다. 
     docker run -it --rm -v $(realpath ~/notebooks):/tf/notebooks -p 8888:8888 rdmkyg/tensorflow:2.4.3-jupyter-cv
+    
+- 주피터 노트북에 진입 하면,      
+    
+- 도커에 이미지  
 
 
 ## 주피터 노트북 진입하면  주로  사용하는 모듈을 설치 한다. 
