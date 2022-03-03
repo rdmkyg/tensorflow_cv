@@ -26,6 +26,6 @@
    `!pip install -U scikit-learn` <br>
    `!pip install Keras==2.4.3` <br>
 
-- 도커에 이미지
+- 도커 
 
 
