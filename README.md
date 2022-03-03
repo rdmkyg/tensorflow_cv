@@ -21,11 +21,11 @@
 -   리눅스 기준으로  도커에 연결 합니다.     
    ` docker run -it --rm -v $(realpath ~/notebooks):/tf/notebooks -p 8888:8888 rdmkyg/tensorflow:2.4.3-jupyter-cv `
     
-- 주피터 노트북에 진입 하면,  아래와 같이 주로 사용하는 모듈을 설치 한다. 
-   !pip install pandas
-   !pip install -U scikit-learn
-   !pip install Keras==2.4.3
+- 주피터 노트북에 진입 하면,  아래와 같이 주로 사용하는 모듈을 설치 한다. <br>
+   `!pip install pandas` <br>
+   `!pip install -U scikit-learn` <br>
+   `!pip install Keras==2.4.3` <br>
 
-- 도커에 이미지  
+- 도커에 이미지
 
 
