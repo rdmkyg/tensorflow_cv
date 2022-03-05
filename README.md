@@ -19,13 +19,20 @@
 - 첨부와 같이 Dockerfile을 만들고 아래와 같이 빌드 합니다.   <br>
      ` docker build --tag rdmkyg/tensorflow:2.4.3-jupyter-cv . `
 -   리눅스 기준으로  도커에 연결 합니다.     
-   ` docker run -it --rm -v $(realpath ~/notebooks):/tf/notebooks -p 8888:8888 rdmkyg/tensorflow:2.4.3-jupyter-cv `
+   ` docker run -it --rm -v $(realpath ~/notebooks):/tf/notebooks -p 8888:8888 --name my-jupyter rdmkyg/tensorflow:2.4.3-jupyter-cv `
     
 - 주피터 노트북에 진입 하면,  아래와 같이 주로 사용하는 모듈을 설치 한다. <br>
    `!pip install pandas` <br>
    `!pip install -U scikit-learn` <br>
    `!pip install Keras==2.4.3` <br>
 
-- 도커 
+- 이미 만들어진 도커를 tag를 만들어 주고 도커 로그인 하고,  push 하기 <br>
+   `sudo docker commit my-jupyter rdmkyg/tensorflow:2.4.3-jupyter-cv` <br>
+   `docker login` <br>
+   `docker tag  tag [이미지번호] rdmkyg/tensorflow:2.4.3-jupyter.cv`     <br>
+   `docker push rdmkyg/tensorflow:2.4.3-jupyter.cv`
 
+
+
+ 
 
