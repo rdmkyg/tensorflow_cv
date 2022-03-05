@@ -29,7 +29,7 @@
 - 이미 만들어진 도커를 tag를 만들어 주고 도커 로그인 하고,  push 하기 <br>
    `sudo docker commit my-jupyter rdmkyg/tensorflow:2.4.3-jupyter-cv` <br>
    `docker login` <br>
-   `docker tag  rdmkyg/tensorflow:2.4.3-jupyter.cv`     <br>
+   `docker tag [이미지번호] rdmkyg/tensorflow:2.4.3-jupyter.cv`     <br>
    `docker push rdmkyg/tensorflow:2.4.3-jupyter.cv`
 
 
